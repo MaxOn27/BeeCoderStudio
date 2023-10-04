@@ -1,0 +1,22 @@
+/*#navigation nav {*/
+/*  display: inline-flex;*/
+/*  flex-direction: row;*/
+/*  gap: 2rem;*/
+/*}*/
+
+#navigation a {
+  /*display: inline-block;*/
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#navigation a:after {
+  display:block;
+  content: '';
+  width: inherit;
+  border-bottom: solid 3px rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
+}
+
+#navigation a:hover:after { transform: scaleX(1); }
